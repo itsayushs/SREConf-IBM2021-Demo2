@@ -8,7 +8,7 @@ provider.addSpanProcessor(spanProcessor)
 provider.register()
 
 const zipkinExporter = new ZipkinExporter({
-  url: 'http://localhost:9411/api/v2/spans',
+  url: 'http://localhost:9411',
   serviceName: 'backend-service'
 })
 
